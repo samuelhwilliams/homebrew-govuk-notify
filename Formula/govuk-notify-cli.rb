@@ -11,9 +11,25 @@ class GovukNotifyCli < Formula
 
   depends_on "rust" => :build
   depends_on "alphagov/gds/gds-cli"
+  depends_on "cloudfoundry/tap/cf-cli@7"
 
   def install
     system "cargo", "install", *std_cargo_args
+  end
+
+  def post_install
+    ohai "Session Manager Plugin Cask required"
+    puts ""
+    puts "--- WARNING: Additional dependencies required ---"
+    puts ""
+    puts "To use the GDS CLI, you must have aws-vault installed."
+    puts "If `aws-vault` is not available, run 'brew install --cask aws-vault'."
+    puts ""
+    puts "To use the GOV.UK Notify CLI, you must install the Session Manager Plugin cask."
+    puts "If `session-manager-plugin` is not available, run 'brew install --cask session-manager-plugin'."
+    puts ""
+    puts "--- WARNING: Additional dependencies required ---"
+    puts ""
   end
 
   test do

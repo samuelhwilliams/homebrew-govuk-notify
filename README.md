@@ -7,7 +7,7 @@ A private Homebrew tap for the internal GOV.UK Notify CLI tooling, like [govuk-n
 
 ### Pre-requisites
 
-- An SSH key configured, as the govuk-notify-cli repo clones over SSH.
+- An SSH key configured, as the dependency `gds-cli` clones over SSH.
 
 ### Usage
 
