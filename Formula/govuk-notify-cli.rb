@@ -3,8 +3,8 @@ class GovukNotifyCli < Formula
   homepage "https://github.com/samuelhwilliams/govuk-notify-cli"
   url "git@github.com:samuelhwilliams/govuk-notify-cli.git",
       using:    :git,
-      tag:      "v0.2.0",
-      revision: "52e46cc86525f18a24194c3dc1df7e6225202125"
+      tag:      "v0.3.0",
+      revision: "2b523b3a9546e75d1a219c60d60e97209e95a51f"
   head "git@github.com:samuelhwilliams/govuk-notify-cli.git",
       using:  :git,
       branch: "main"
